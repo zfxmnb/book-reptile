@@ -17,7 +17,8 @@
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint-staged": "lint-staged",
-    "build": "babel src --out-dir dist",
+    "build": "babel --extensions '.ts,.js,.tsx,.jsx' src --out-dir dist",
+    "esbuild": "node esbuild.config.js",
     "start": "node dist/index.js"
   },
   "lint-staged": {
@@ -41,6 +42,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/register": "^7.13.16",
+    "esbuild": "^0.12.7",
     "puppeteer": "^9.1.1"
   },
   "devDependencies": {

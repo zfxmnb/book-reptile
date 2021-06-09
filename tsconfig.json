@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "includes": ["**/*.js"],
+  "includes": ["**/*.ts"],
   "exclude": ["node_modules", "dist", "jest"]
 }
