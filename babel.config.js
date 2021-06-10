@@ -11,7 +11,7 @@ module.exports = function config(api) {
         corejs: { version: 3, proposals: true }
       }
     ],
-    // '@babel/preset-react',
+    '@babel/preset-react',
     '@babel/preset-typescript'
   ];
 

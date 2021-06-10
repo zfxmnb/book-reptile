@@ -1,0 +1,4 @@
+export default {
+  app1: 'app1',
+  app2: 'app2'
+};
