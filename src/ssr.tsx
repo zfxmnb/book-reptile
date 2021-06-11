@@ -27,7 +27,6 @@ const SSR: React.FC<{
     const ReactDomServer = require('react-dom/server');
     const html = ReactDomServer.renderToString(children as ReactElement<any>);
     cache.set(cacheKey, html);
-    console.log('html', html);
     return html;
   }, []);
   return typeof window === 'object' ? <>{children}</> : <>{getChildNode()}</>;

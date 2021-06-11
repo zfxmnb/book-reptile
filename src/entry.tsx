@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDomServer from 'react-dom/server';
 import SSR from './ssr';
-import ssrId from './ssrId';
+import SSRID from './ssrId';
 
 const App: React.FC<{
   type: string;
@@ -12,19 +12,19 @@ const App: React.FC<{
 
 ReactDomServer.renderToString(
   <>
-    <SSR id={ssrId.app1}>
+    <SSR id={SSRID.APP1}>
       <App type="1" />
     </SSR>
-    <SSR id={ssrId.app1}>
+    <SSR id={SSRID.APP1}>
       <App type="1" />
     </SSR>
-    <SSR id={ssrId.app1}>
+    <SSR id={SSRID.APP1}>
       <App type="1" id={3} />
     </SSR>
-    <SSR id={ssrId.app1}>
+    <SSR id={SSRID.APP1}>
       <App type="12" />
     </SSR>
-    <SSR id={ssrId.app2}>
+    <SSR id={SSRID.APP2}>
       <App type="1" />
     </SSR>
   </>
